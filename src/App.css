@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100&family=M+PLUS+Rounded+1c:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam', sans-serif;
+}
+.universe{
+  width: 100vw;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url('./img/starry-sky-2675322_1920.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.heads{
+  height: 8vh;
+  width: 100vw;
+  border: none;
+  border-bottom: 0.7px solid white;
+  display: flex;
+  /* justify-content: space-between; */
+ padding-top:0.5em ;
+}
+.topic{
+  width: 40%;
+  height: 100%;
+  color: white;
+  margin-left: 1em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.planets-links{
+  width: 60%;
+  height: 100%;
+  margin-left: 9em;
+  /* padding-left: 3em; */
+  float: right;
+}
+.nav{
+  width: 200px;
+  height: 100%;
+  margin: 1em;
+  text-transform: uppercase;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.core{
+  width: 100vw;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.planet{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  animation: spin 30s linear alternate infinite;
+}
+.img1{
+  width: 60%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #00000059);
+}
+.planet-info{
+  width: 40%;
+  height: 100%;
+  padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  height: 20%;
+  margin-top: 1em;
+}
+.para{
+  height: 30%;
+  padding-top: 0em;
+  margin-bottom: 1em;
+}
+.planet-info h1{
+  color: white;
+  text-transform:uppercase ;
+  text-align: center;
+}
+.planet-info h3{
+ 
+  font-size: 15px;
+  color: white;
+}
+
+
+@keyframes spin {
+  /* 0% {
+    transform: translateX(-50%);
+  } */
+  /* 100% {
+    transform: translateX(-70%);
+  } */
+}
+.planet > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0000001a);
+}
+.dropdown{
+  display: none;
+}
+.dropbtn{
+  display: none;
+}
+.dropdown-content{
+  display: none;
+}
+.planet > span > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.overview{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.over{
+  width: 90%;
+  height: 500px;
+  border: 1px solid #fff;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.over1{
+  background-color: rgb(66, 34, 104);
+  width: 90%;
+  height: 500px;
+  border: 1px solid #ddd;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.over:hover{
+  background-color: rgb(99, 8, 99);
+}
+.footer{
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 10%;
+justify-content: center;
+align-items: center;
+padding-top: 3em;
+}
+.foot{
+  width: 180px;
+  height: 90px;
+  border: 1px solid #cecece;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 0.8em;
+  padding-left: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+  .planets-links{
+    display: none;
+  }
+ .core {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .planet{
+    width: 100%;
+    height: 50%;
+  }
+  .title{
+    height: 10%;
+  }
+  .img1{
+    height: 100%;
+  }
+  .planet-info{
+    width: 100%;
+    height: 50%;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .footer{
+    padding-right: 5em;
+  }
+}
