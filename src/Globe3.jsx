@@ -1,19 +1,19 @@
 import React from "react";
 import "./App.css";
-import earth from "./img/earth2.blend";
+import venus from "./img/Venus.png";
 function Globe3() {
   return (
-    <div className="core">
+    <div className="core col-sm-3 col-md-6 col-lg-12">
       <div className="planet">
         <span>
-          <img src={earth} alt="" className="img1" />
+          <img src={venus} alt="" className="img1" />
         </span>
       </div>
       <div className="planet-info">
         <div className="title">
           <h1>Venus</h1>
         </div>
-        <div className="para">
+        <div className="para py-2 px-4">
           <h3>
             Venus is the second planet from the Sun. It is named after the Roman
             goddess of love and beauty. As the brightest natural object in

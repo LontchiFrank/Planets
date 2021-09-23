@@ -3,8 +3,8 @@ import './App.css'
 import earth from './img/Mars.png'
 function Globe2() {
     return (
-        <div className="core">
-        <div className="planet">
+        <div className="core col-sm-3 col-md-6 col-lg-12">
+        <div className=" planet">
             <span>
             <img src={earth} alt='' className='img1' />
                 </span>
@@ -14,7 +14,7 @@ function Globe2() {
                 <div className="title">
                 <h1>Mars</h1>
                 </div>
-                <div className="para">
+                <div className="para py-2 px-4">
             <h3>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars's surface.</h3>
                 </div>
             <div className="overview">

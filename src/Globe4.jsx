@@ -3,7 +3,7 @@ import './App.css'
 import earth from './img/Jupiter.png'
 function Globe4() {
     return (
-        <div className="core">
+        <div className="core col-sm-3 col-md-6 col-lg-12">
         <div className="planet">
             <span>
             <img src={earth} alt='' className='img1' />
@@ -14,7 +14,7 @@ function Globe4() {
                 <div className="title">
                 <h1>Jupiter</h1>
                 </div>
-                <div className="para">
+                <div className="para py-2 px-4">
             <h3>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third-brightest natural object in the Earth's night sky</h3>
                 </div>
             <div className="overview">
