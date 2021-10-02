@@ -13,16 +13,16 @@ function Globe(props) {
   return (
     <div className="core col-sm-3 col-md-6 col-lg-12">
       <div className="planet">
-        {/* <span>
-          <img src={earth} alt='' className='img1' />
-              </span>  */}
-        <Canvas camera={{ position: [0, 0, 120], fov: 70 }}>
+        <span>
+          <img src={earth} alt="" className="img1" />
+        </span>
+        {/* <Canvas camera={{ position: [0, 0, 120], fov: 70 }}>
           <Suspense fallback={null}>
             <mesh position={[0, -35, 0]}>
               <Model />
             </mesh>
           </Suspense>
-        </Canvas>
+        </Canvas> */}
       </div>
       <div className="planet-info">
         <div className="title">
