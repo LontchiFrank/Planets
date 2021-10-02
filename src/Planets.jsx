@@ -91,27 +91,7 @@ function Planets() {
               </div>
             </nav>
           </header>
-          {/* <div className='planets-links'>
-                        <Link to='/mercury' className='nav'>Mercury</Link>
-                        <Link to='/venus'  className='nav'>Venus</Link>
-                        <Link to='/earth' className='nav'>Earth</Link>
-                        <Link to='/mars' className='nav'>Mars</Link>
-                        <Link to='/jupiter' className='nav'>Jupiter</Link>
-                        <Link to='/saturn' className='nav'>Saturn</Link> 
-                        <Link to='/uranus' className='nav'>Uranus</Link> 
-                        <Link to='/neptune' className='nav'>Neptune</Link> 
-                    </div>
-                    <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>  */}
-        </div>
+          </div>
         <Route exact path="/earth" exact component={Globe} />
         <Route exact path="/mercury" exact component={Globe1} />
         <Route exact path="/mars" exact component={Globe2} />
